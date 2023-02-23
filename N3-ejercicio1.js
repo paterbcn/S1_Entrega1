@@ -1,30 +1,18 @@
-var Matriz=[]
-
-
-
-function generador(){
+function generador(num){
     var array=""
-    for(var i=0 ; i<=9; i++){
-        array +=i
+    for(var i=0 ; i<=num; i++){
+        array +=i}
+    return array
     }
-    
-    return(array) }   
 
-function ComMatriz(){
-    for (i=0 ; i<10 ;i++){
-        Matriz.push(generador);
-    }
-    return Matriz
-
-
-}
-
-function mm (){
-    generador();
-    ComMatriz();
-    for (var n of Matriz){
-        console.log(n())
+function GenMatriz(num){
+    var matriz =[];
+    for (var i=0 ; i<=num ;i++){
+        matriz.push(generador);}
+    for (var n of matriz){
+        console.log(n(num));
+        
     }
 }
+GenMatriz(9)
 
-mm()
